@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-// import qqboxyImportUrl from './assets/images/qqboxy.jpg';
+import qqboxyImportUrl from './assets/images/qqboxy.jpg';
 const qqboxyUrl = ref("");
 const qqboxyNewUrl = ref("");
 
@@ -89,25 +89,29 @@ onMounted(() => {
 &lt;/template&gt;</pre>
     </div>
   </div>
-
   <div
     class="max-w w-full lg:max-w-full lg:flex border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r lg:mb-5">
     <div class="w-[200px]">
-      <div class="w-[200px] h-[200px] bg-contain bg-no-repeat bg-center" :class="`bg-[url('${qqboxyImportUrl}')]`"></div>
+      <div class="w-[200px] h-[200px] bg-contain bg-no-repeat bg-center"
+        :style="{ 'background-image': `url('${qqboxyImportUrl}')` }"></div>
     </div>
     <div class="w-full p-4 flex flex-col justify-between leading-normal">
       <div class="text-gray-900 font-bold text-xl mb-2">Method 4</div>
       <div class="pt-2 pb-2">
         <span
           class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Static</span>
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Tailwind</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#CSS
+          Style</span>
       </div>
-
+      <pre
+        style="font-family:monospace;color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-weight: 400; ">&lt;script setup&gt;
+<span style="color: rgb(0, 0, 255); font-weight: 400;">import</span> qqboxyImportUrl <span style="color: rgb(0, 0, 255); font-weight: 400;">from</span> <span style="color: rgb(163, 21, 21); font-weight: 400;">'./assets/images/qqboxy.jpg'</span>;
+&lt;/script&gt;
+<span style="color: rgb(0, 0, 0); font-weight: 400;"><span style="color: rgb(0, 0, 255); font-weight: 400;">&lt;<span style="color: rgb(0, 0, 255); font-weight: 400;">template</span>&gt;</span>
+  <span style="color: rgb(0, 0, 255); font-weight: 400;">&lt;<span style="color: rgb(0, 0, 255); font-weight: 400;">div</span> <span style="color: rgb(255, 0, 0); font-weight: 400;">class</span>=<span style="color: rgb(163, 21, 21); font-weight: 400;">"w-[200px] h-[200px] bg-contain bg-no-repeat bg-center"</span> <span style="color: rgb(255, 0, 0); font-weight: 400;">:style</span>=<span style="color: rgb(163, 21, 21); font-weight: 400;">"{ 'background-image': `url('${qqboxyImportUrl}')` }"</span>&gt;</span><span style="color: rgb(0, 0, 255); font-weight: 400;">&lt;/<span style="color: rgb(0, 0, 255); font-weight: 400;">div</span>&gt;</span>
+<span style="color: rgb(0, 0, 255); font-weight: 400;">&lt;/<span style="color: rgb(0, 0, 255); font-weight: 400;">template</span>&gt;</span></span></pre>
     </div>
   </div>
-
-
   <h2>Dynamic</h2>
   <div
     class="max-w w-full lg:max-w-full lg:flex border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r lg:mb-5">
